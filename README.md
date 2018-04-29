@@ -63,3 +63,7 @@ mysql-restore \
 --concurrency <max concurrency table import, default=8>
 --ignore-tables <the tables you want to skip, comma as delimitor>
 ```
+* 範例
+```
+./mysql-restore --path /backup/dump-20180429.sql.gz --ignore-tables "NotImportantTable,JustLogTable"
+```
